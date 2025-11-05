@@ -14,9 +14,9 @@ from reportlab.lib.enums import TA_CENTER
 # ==========================
 # CONFIGURACIÓN BASE
 # ==========================
-BASE = Path("/Users/joseluisgiadanscastellanos/Library/CloudStorage/OneDrive-CEMEX/OneDrive_Cemex")
-OUT_FILE = BASE / "Codigos/out/trafos_maestro_tabla.xlsx"
-LOGO_FILE = BASE / "Codigos/out/cemex_logo.png"
+BASE = Path(__file__).parent
+OUT_FILE = BASE / "data/trafos_maestro_tabla.xlsx"
+LOGO_FILE = BASE / "cemex_logo.png"
 
 st.set_page_config(page_title="Dashboard Transformadores CEMEX", layout="wide", page_icon="⚡")
 
